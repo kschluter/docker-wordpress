@@ -52,6 +52,9 @@ services:
       - mysql
     environment:
      - PMA_ARBITRARY=1
+     - PMA_USER=${DB_USERNAME}
+     - PMA_PASSWORD=${DB_PASSWORD}
+     - PMA_HOST=mysql   
 networks:
   frontend:
   backend:
